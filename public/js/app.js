@@ -69,10 +69,12 @@ class ToggleableTimerForm extends React.Component {
 
   render() {
     if (this.state.isOpen) {
-      <TimerForm
-        onFormSubmit={this.handleFormSubmit}
-        onFormClose={this.handleFormClose}
-      />
+      return (
+        <TimerForm
+          onFormSubmit={this.handleFormSubmit}
+          onFormClose={this.handleFormClose}
+        />
+      );
     } else {
       return (
         <div className='ui basic content center aligned segment'>
