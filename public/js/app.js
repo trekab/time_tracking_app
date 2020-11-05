@@ -205,6 +205,14 @@ class Timer extends React.Component {
     clearInterval(this.forceUpdateInterval);
   }
 
+  handleStartClick = () => {
+    this.props.onStartClick(this.props.id);
+  };
+
+  handleStopClick = () => {
+    this.props.onStopClick(this.props.id);
+  };
+
   handleTrashClick = () => {
     this.props.onTrashClick(this.props.id);
   };
@@ -213,7 +221,7 @@ class Timer extends React.Component {
     const elapsedString = helpers.renderElapsedString(
       this.props.elapsed, this.props.runningSince
     );
-    
+
     return (
       <div className='ui centered card'>
         <div className='content'>
@@ -243,9 +251,11 @@ class Timer extends React.Component {
             </span>
           </div>
         </div>
-        <div className='ui bottom attached blue basic button'>
-          Start
-        </div>
+        <TimerActionButton
+          timerIsRunning={!!this.props.runningSince}
+          onStartClick={this.handleStartClick}
+          onStopClick={this.handleStopClick}
+        />
       </div>
     );
   }
