@@ -34,6 +34,14 @@ class TimersDashboard extends React.Component {
     this.deleteTimer(timerId);
   };
 
+  handleStartClick = (timerId) => {
+    this.startTimer(timerId);
+  };
+
+  handleStopClick = (timerId) => {
+    this.stopTimer(timerId);
+  };
+
   createTimer = (timer) => {
     const t = helpers.newTimer(timer);
     this.setState({
