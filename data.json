@@ -1,15 +1,23 @@
 [
     {
-        "title": "Mow the lawn",
-        "project": "House Chores",
-        "elapsed": 5471330,
-        "id": "0a4a79cb-b06d-4cb1-883d-549a1e3b66d7",
+        "title": "Clear paper jam",
+        "project": "Office Chores",
+        "elapsed": 1281030,
+        "id": "a73c1d19-f32d-4aff-b470-cea4e792406a",
         "runningSince": null
     },
     {
-        "title": "Clear paper jam",
-        "project": "Office Chores",
-        "elapsed": 1273998,
-        "id": "a73c1d19-f32d-4aff-b470-cea4e792406a"
+        "title": "Learning React",
+        "project": "Build a Timer",
+        "id": "3801809a-ccbe-4ccd-adf5-4b348eeda5b6",
+        "elapsed": 7904,
+        "runningSince": null
+    },
+    {
+        "title": "Build a Rails API",
+        "project": "Build the Timer API in rails.",
+        "id": "5cb2545b-f059-4186-94c1-feacd7637b0c",
+        "elapsed": 16444,
+        "runningSince": null
     }
 ]
