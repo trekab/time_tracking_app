@@ -44,6 +44,8 @@ class TimersDashboard extends React.Component {
     this.setState({
       timers: this.state.timers.concat(t),
     });
+
+    client.createTimer(t);
   };
 
   updateTimer = (attrs) => {
