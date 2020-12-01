@@ -61,6 +61,8 @@ class TimersDashboard extends React.Component {
         }
       }),
     });
+
+    client.updateTimer(attrs);
   };
 
   deleteTimer = (timerId) => {
